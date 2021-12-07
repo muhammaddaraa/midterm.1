@@ -22,7 +22,7 @@ class _ListScreenState extends State<ListScreen> {
           CircleAvatar(
             backgroundColor: Colors.blue.shade200,
             child: Text(
-              '4',
+              '3',
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22.0),
             ),
           ),
@@ -32,7 +32,7 @@ class _ListScreenState extends State<ListScreen> {
         ],
       ),
       body: ListView.separated(
-        itemCount: 4,
+        itemCount: 3,
         separatorBuilder: (context, index) => Divider(
           color: Colors.blueGrey,
         ),
@@ -56,8 +56,9 @@ class _ListScreenState extends State<ListScreen> {
               ],
             ),
           ),
-          title: Text('Note title'),
-          subtitle: Text('Note content'),
+          title: Text('What is Flutter?'),
+          subtitle: Text(
+              'Flutter is an open-source UI framework for creating native mobile applications. It allows developers to build mobile applications a single codebase.'),
           onTap: () {},
           onLongPress: () {},
         ),
